@@ -23,7 +23,7 @@ index `i` in [29917, 0, 1].
 smallest(1000000) --> [1, 0, 6] or ...
 */
 /*ACHTUNG!!!!!
-  rename file in "ToSmallest.java" /*
+  rename file in "ToSmallest.java" */
 import java.util.*;
 
 class ToSmallestVector{
