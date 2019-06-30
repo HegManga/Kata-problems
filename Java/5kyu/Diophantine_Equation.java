@@ -329,3 +329,29 @@ public class Dioph {
 	}
 }
 
+/* 
+Clever method but not object oriented
+
+import java.util.*;
+
+public class Dioph {
+	
+	public static String solEquaStr(long n) {
+		StringJoiner sj = new StringJoiner(", ", "[", "]");
+
+        System.out.println(Math.sqrt(n));
+        for (long i = 1; i <= Math.sqrt(n) ; i++)
+            if (n % i == 0) {
+                long j = n / i;
+                if ((i % 2 == j % 2) && ((j - i) % 4 == 0)) {
+                    long x = (j + i) / 2;
+                    long y = (j - i) / 4;
+                    sj.add(String.format("[%d, %d]", x, y));
+                }
+            }
+
+        return sj.toString();
+	}
+	
+}
+*/
