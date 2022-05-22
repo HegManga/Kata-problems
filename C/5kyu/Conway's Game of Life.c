@@ -51,14 +51,13 @@ void evolve (size_t rows, size_t cols, const bool cur_gen[rows][cols], bool next
 
   int n;
 	for(size_t i=0;i<rows;i++){
-    printf("\n");
-    for(size_t j=0;j<cols;j++){]
+    for(size_t j=0;j<cols;j++){
       n = neighbours_num(rows,cols,cur_gen,i,j);
-      printf("%d ",n);
       switch (n){
           case 2:  if(cur_gen[i][j]==1) next_gen[i][j] = 1;
+                   else next_gen[i][j] = 0; 
                    break; 
-          case 3:  next_gen[i][j = 1;
+          case 3:  next_gen[i][j] = 1;
                    break;
           default: next_gen[i][j] = 0;
                    break;   
