@@ -14,6 +14,14 @@ You can take two points of view to do this kata:
     the second one - not at all mandatory, but as a complement - 
     is to get a bit your head around and find which sequence is hidden behind un.
 *)
+
+(*
+Clever, not mine
+open Big_int;;
+
+let fcn(n: int): string =
+  (string_of_big_int (power_big_int_positive_int (big_int_of_int 2) n)) ;;
+*)
 let string_rev (str:string) =
   let rec aux  idx = match idx with
       0 -> Char.escaped (str.[0])
